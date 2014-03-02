@@ -54,7 +54,8 @@ PlaceController.checkAvailability = function(place) {
 };
 
 PlaceController.onClickSubscribe = function(id) {
-	var tripplace = TripPlaces.setSubscribe(id, 'true');
+	var issubscribed = document.getElementById(id).value;
+	var tripplace = TripPlaces.setSubscribe(id, issubscribed);
 	
 	//Create a new entity object that contains the updated properties
 	var entity = new Apigee.Entity(tripplace);

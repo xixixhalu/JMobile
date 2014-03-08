@@ -31,9 +31,8 @@ PlaceController.displayPlaces = function(planId){
 	}
 	for (var i = 0; i < obj2.length; i++) {
 	$('#places-list').append('<fieldset data-role="collapsible" data-theme="c" data-content-theme="c"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">\
-<legend><div class="ui-grid-b"><div class="ui-block-a">' + obj2[i].name + '<div style="font-size:small;font-weight:normal;">' + obj2[i].shorttext + '</div></div>\
-<div class="ui-block-b"></div>\
-<div class="ui-block-c" style="padding:10px 20px;text-align:center;">\
+<legend><div class="ui-grid-a"><div class="ui-block-a">' + obj2[i].title + '<div style="font-size:small;font-weight:normal;">' + obj2[i].shorttext + '</div></div>\
+<div class="ui-block-b" style="text-align:right;">\
 <select name="switch" class="subscribe" id="'+obj2[i].uuid+'" data-role="slider" data-mini="true"><option value="false" '+(obj2[i].issubscribed == 'false'?'selected':'')+'>Off</option>\
 <option value="true" '+(obj2[i].issubscribed == 'true'?'selected':'') +'>On</option></select>\
 </div>\
@@ -66,6 +65,7 @@ PlaceController.onClickSubscribe = function(id) {
         if (error) {
             //error
             alert(error['message']);
+            window.location.reload(); 
         } else {
             //success
             alert('success');

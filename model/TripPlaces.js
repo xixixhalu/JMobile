@@ -12,18 +12,19 @@ var dataClient = new Apigee.Client(client_creds);
 //URL for requesting the data of trip places from apigee
 var tripPlacesURL = 'https://api.usergrid.com/bohan2345/sandbox/tripplaces/?limit=999';
 
-/*************Data Structure**************
+/*******************************Data Structure in APIgee****************************
 var tripplace = {
         client : dataClient, //Required
         data : {
             'type' : 'tripplaces',
             'uuid' : id,
             'name' : name,
-            'shorttext' : shorttext,
-            'issubscribed' : issubscribed
+            'title' : placename,				//place name
+            'shorttext' : shortdescription,		//place short description
+            'issubscribed' : issubscribed		//subscribed status
         }
     };
-*****************************************/
+***********************************************************************************/
 function TripPlaces(){
 	
 }

@@ -24,6 +24,31 @@
 				});
 			});
 			
+			$(document).on("ready", function(event) {
+				$('.detail').on("tap", function() {
+					PlaceController.onClickDetails(this.id);
+				});
+			});
+			
+			$(document).on("ready", function(event) {
+				$('.schedule').on("tap", function() {
+					PlaceController.onClickSchedule(this.id);
+				});
+			});
+			
+			$(document).on("ready", function(event) {
+				$('.annotate').on("tap", function() {
+					PlaceController.onClickAnnotate(this.id);
+				});
+			});
+			
+			$(document).on("ready", function(event) {
+				$('.delete').on("tap", function() {
+					PlaceController.onClickDelete(this.id);
+				});
+			});
+			
+			
 			//Add more Tap Event here
 		</script>
 

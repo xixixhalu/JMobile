@@ -38,10 +38,10 @@ PlaceController.displayPlaces = function(planId){
 </div>\
 </div></legend>\
 <div data-role="navbar" style="text-align:center;"><ul>\
-<li><a href="#" data-role="button">Detail</a></li>\
-<li><a href="#" data-role="button">Schedule</a></li>\
-<li><a href="#" data-role="button">Annotate</a></li>\
-<li><a href="#" data-role="button">Delete</a></li>\
+<li><a href="#" data-role="button" class="detail">Detail</a></li>\
+<li><a href="#" data-role="button" class="schedule">Schedule</a></li>\
+<li><a href="#" data-role="button" class="annotate">Annotate</a></li>\
+<li><a href="#" data-role="button" class="delete">Delete</a></li>\
 </ul></div></fieldset>');
 	}
 };
@@ -75,17 +75,17 @@ PlaceController.onClickSubscribe = function(id) {
 };
 
 PlaceController.onClickDetails = function(id) {
-	
+	alert('under development');
 };
 
 PlaceController.onClickSchedule = function(id) {
-	
+	alert('under development');
 };
 
 PlaceController.onClickAnnotate = function(id) {
-	
+	alert('under development');
 };
 
 PlaceController.onClickDelete = function(id) {
-	
+	alert('under development');
 };
